@@ -1,4 +1,10 @@
-﻿using System;
+﻿/***
+ * *
+ Denis Sorokin
+
+*/
+
+using System;
 
 namespace les_01
 {
