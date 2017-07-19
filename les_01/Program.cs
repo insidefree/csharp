@@ -68,15 +68,7 @@ namespace les_01
 
         public static void PersonalData()
         {
-            string greeting = @"
-________                .__             _____                         ___________    .__               _____       .__       
-\______ \   ____   ____ |__| ______   _/ ____\______  ____   _____    \__    ___/___ |  |             /  _  \___  _|__|__  __
- |    |  \_/ __ \ /    \|  |/  ___/   \   __\\_  __ \/  _ \ /     \     |    |_/ __ \|  |    ______  /  /_\  \  \/ /  \  \/ /
- |    `   \  ___/|   |  \  |\___ \     |  |   |  | \(  <_> )  Y Y  \    |    |\  ___/|  |__ /_____/ /    |    \   /|  |\   / 
-/_______  /\___  >___|  /__/____  >    |__|   |__|   \____/|__|_|  /    |____| \___  >____/         \____|__  /\_/ |__| \_/  
-        \/     \/     \/        \/                               \/                \/                       \/               
-            
-";
+            string greeting = "Denis Sorokin from Tel-Aviv";
             Console.SetCursorPosition((Console.WindowWidth - greeting.Length) / 2, Console.CursorTop);
             Console.WriteLine(greeting);
         }
