@@ -27,6 +27,9 @@ namespace les_03
             ts02.MaxCount();
             Console.WriteLine("\"MaxCount\" done");
             Console.WriteLine($"Count of max elements: {ts02.MaxCount()}");
+
+            Task_02 ts_stream = new Task_02("data.txt");
+            ts_stream.WriteData("test data");
         }
     }
 }

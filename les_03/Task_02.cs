@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 namespace les_03_task_02
 /*
 	а)Дописать класс для работы с одномерным массивом. Реализовать конструктор, создающий
@@ -14,7 +15,7 @@ namespace les_03_task_02
     public class Task_02
     {
         int[] arr;
-
+        string filename;
         public Task_02(int n, int start, int step)
         {
             arr = new int[n];
@@ -23,6 +24,11 @@ namespace les_03_task_02
             {
                 arr[i] = arr[i-1] + step;
             }
+        }
+
+        public Task_02(string filename)
+        {
+            this.filename = filename;
         }
 
         public int Sum()
@@ -67,6 +73,26 @@ namespace les_03_task_02
                 }
             }
             return count;
+        }
+
+        public void WriteData(string data)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(new FileStream("c:\\test.txt", FileMode.OpenOrCreate));
+                // StreamWriter sw = new StreamWriter("c:\\test.txt", true);
+                sw.WriteLine("data");
+                Console.WriteLine("record");
+                // sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally 
+            {
+                Console.WriteLine("Executing finally block.");
+            }
         }
     }
 }
