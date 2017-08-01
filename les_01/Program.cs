@@ -5,7 +5,7 @@
 */
 
 using System;
-
+using les_02;
 namespace les_01
 {
     class Programm
@@ -90,6 +90,8 @@ namespace les_01
             PersonalData();
 
             Console.ReadKey();
+
+            MyClass.Greeting();
         }
     }
 }
